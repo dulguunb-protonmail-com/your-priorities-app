@@ -1,7 +1,7 @@
 {
-  "name": "Your Prioritees",
+  "name": "tarsalgo",
   "description": "Citizen participation application",
-  "repository": "https://github.com/rbjarnason/your-priorities-app",
+  "repository": "https://github.com/dulguunb-protonmail-com/your-priorities-app",
   "logo": "https://s3.amazonaws.com/yrpri-direct-asset/YP_FinalLogo_light_grey.png",
   "keywords": ["edemocracy", "citizen participation", "open source"],
   "image": "heroku/nodejs"
