@@ -3,7 +3,7 @@
 const fs        = require("fs");
 const path      = require("path");
 const Sequelize = require("sequelize");
-const env       = process.env.NODE_ENV || "development";
+const env       = 'production';//process.env.NODE_ENV || "development";
 const _ = require('lodash');
 
 let sequelize;
@@ -29,6 +29,8 @@ const operatorsAliases = {
 };
 
 if (process.env.NODE_ENV === 'production') {
+  console.log(`process.env.NODE_ENV=${process.env.NODE_ENV}`)
+  console.log("Index.js is called it's on production environment");
   sequelize = new Sequelize(process.env.DATABASE_URL, {
     dialect: 'postgres',
     dialectOptions: {
